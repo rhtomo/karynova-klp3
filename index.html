@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARYNOVA - Konsultasi Karier & Bedah Portofolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <!-- BAGIAN CEO: HEADER & NAVIGASI -->
+    <header id="header-section" data-role="CEO">
+        <h1>KARYNOVA</h1>
+        <nav>
+            <a href="#hero-section">Beranda</a>
+            <a href="#catalog-section">Katalog</a>
+            <a href="#calc-section">Kalkulator</a>
+        </nav>
+    </header>
+
+ 
+<!-- ============ PM 1: HERO SECTION ============ -->
+<section id="hero-section" data-role="PM">
+  <div class="hero-content">
+    <h1>KARYNOVA</h1>
+    <h2 class="hero-subtitle">Career Readiness &amp; Professional Development</h2>
+    <p class="hero-desc">
+      Wadah bagi talenta baru yang sedang
+      bersiap bersinar di dunia profesional. Mulai dari CV, wawancara,
+      sampai arah karier, kami dampingi langkahmu.
+    </p>
+    <ul class="hero-benefits">
+      <li>
+        <strong>Professional CV Review:</strong>
+        <span>Membantu meningkatkan kualitas CV kamu.</span>
+      </li>
+      <li>
+        <strong>Interview Preparation:</strong>
+        <span>Melatih kesiapan menghadapi wawancara kerja.</span>
+      </li>
+      <li>
+        <strong>Personalized Career Guidance:</strong>
+        <span>Arahan pengembangan karier sesuai kebutuhan individu.</span>
+      </li>
+    </ul>
+    <a class="btn-cta"> <strong>Write Your Career Narrative</strong> </a>
+  </div>
+</section>
+ 
+<!-- ============ PM 2: CATALOG SECTION ============ -->
+<section id="catalog-section" data-role="PM">
+  <h2>Pilih Paket Karynova</h2>
+  <p class="catalog-intro">
+    Tiga paket konsultasi untuk setiap tahap persiapan kariermu.
+  </p>
+ 
+  <div class="catalog-grid">
+ 
+    <!-- Paket 1 -->
+    <div class="card">
+      <h3>Karynova Ignition</h3>
+      <p class="card-focus">Professional CV Review</p>
+      <p class="card-desc">
+        Membedah struktur, pilihan kata, dan dampak setiap pengalaman di CV.
+      </p>
+      <ul class="card-features">
+        <li>Catatan perbaikan secara profesional</li>
+        <li>CV versi final dalam bahasa Indonesia dan Inggris</li>
+        <li>1 kali revisi gratis dalam 3 hari</li>
+      </ul>
+      <p class="price">Rp89.000/sesi</p>
+      <p class="promo">Kode promo <strong>NOVANEXT</strong>: Diskon 15%</p>
+    </div>
+ 
+    <!-- Paket 2 (unggulan) -->
+    <div class="card featured">
+      
+      <h3>Karynova Spotlight</h3>
+      <p class="card-focus">Interview Preparation</p>
+      <p class="card-desc">
+        Simulasi HR dan user interview sesuai posisi yang kamu incar.
+      </p>
+      <ul class="card-features">
+        <li>Penilaian terstruktur</li>
+        <li>Rekaman wawancara</li>
+        <li>Contoh jawaban dengan metode STAR</li>
+      </ul>
+      <p class="price">Rp175.000/sesi</p>
+      <p class="promo">Kode promo <strong>NOVANEXT</strong>: Diskon 15%</p>
+    </div>
+ 
+    <!-- Paket 3 -->
+    <div class="card">
+      <h3>Karynova Odyssey</h3>
+      <p class="card-focus">Personalized Career Guidance</p>
+      <p class="card-desc">
+        Pendampingan karier menyeluruh dari pemetaan diri sampai membangun koneksi.
+      </p>
+      <ul class="card-features">
+        <li>Pemetaan minat dan kekuatan</li>
+        <li>Tinjauan CV dan bedah portofolio kerja digital</li>
+        <li>Simulasi wawancara</li>
+        <li>Career roadmap 6 bulan</li>
+        <li>Akses networking platform seperti LinkedIn</li>
+        <li>Akses berlaku selama 14 hari</li>
+      </ul>
+      <p class="price">Rp349.000/sesi</p>
+      <p class="promo">Kode promo <strong>NOVANEXT</strong>: Diskon 15%</p>
+    </div>
+ 
+  </div>
+</section>
+ 
+<!-- ============ SE 1: CALCULATOR SECTION ============ -->
+<section id="calc-section" data-role="SE">
+  <h2>Simulasi Perhitungan Biaya Konsultasi</h2>
+ 
+  <form id="form-kalkulator">
+    <!-- Elemen Pilihan Paket (Tag Select dengan 3 Pilihan Nilai Harga) -->
+    <div class="form-group">
+      <label for="paket-layanan">Pilih Paket Layanan:</label>
+      <select id="paket-layanan">
+        <option value="89000">Karynova Ignition (Paket Tinjauan Dokumen CV) - Rp89.000</option>
+        <option value="175000">Karynova Spotlight (Paket Simulasi Wawancara) - Rp175.000</option>
+        <option value="349000">Karynova Odyssey (Paket Pendampingan Penuh) - Rp349.000</option>
+      </select>
+    </div>
+ 
+    <!-- Kolom Input Angka Jumlah Pemesanan -->
+    <div class="form-group">
+      <label for="jumlah-sesi">Jumlah Sesi Konsultasi:</label>
+      <input type="number" id="jumlah-sesi" min="1" value="1" placeholder="Masukkan jumlah sesi">
+    </div>
+ 
+    <!-- Kolom Input Teks Kode Promo (Otomatis Capslock) -->
+    <div class="form-group">
+      <label for="kode-promo">Kode Promo:</label>
+      <input type="text" id="kode-promo" placeholder="Masukkan kode: NOVANEXT" oninput="this.value = this.value.toUpperCase()">
+    </div>
+ 
+    <!-- Tombol Hitung -->
+    <button type="button" id="btn-hitung" onclick="hitungTotalSesi()">Hitung Biaya</button>
+  </form>
+ 
+  <!-- Elemen Tempat Menampilkan Hasil Perhitungan -->
+  <div id="hasil-kalkulator">
+    <p>Silakan pilih paket, masukkan jumlah sesi, dan klik <strong>Hitung Biaya</strong>.</p>
+  </div>
+</section>
+ 
+<!-- BAGIAN CEO: FOOTER -->
+    <footer id="footer-section" data-role="CEO">
+        <p>Kelas Bisnis Digital B - Kelompok 3 (Konsultasi Karier & Bedah Portofolio Kerja Digital)</p>
+        <p>
+            Anggota Tim:<br>
+            Reynaldo Handoyotomo (CEO)<br>
+            Muhammad Jawwad (Product Manager)<br>
+            Nafisah Naila Rahmah (Product Manager)<br>
+            M Kevan (UI/UX Designer)<br>
+            Trihutomo Adjie Waluyo (UI/UX Designer)<br>
+            Mochammad Hasan Nashrullah (Software Engineer)<br>
+            Muhammad Farrel Widianto (Software Engineer)
+        </p>
+        <p>&copy; 2026 KARYNOVA. Hak Cipta Dilindungi.</p>
+    </footer>
+
+
+<!-- Menghubungkan file script.js di OneCompiler -->
+<script src="script.js"></script>
+ 
+</body>
+</html>
+ 
